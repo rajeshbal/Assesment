@@ -5,7 +5,7 @@ const router = express.Router();
 
 router.get("/", getUser);
 router.get("/:id", getUserById);
-router.post("/importData", upload, importCsv);
+router.post("/import", upload, importCsv);
 router.post("/createUser", createUser);
 router.put("/:id", updateUser);
 router.delete("/:id", deleteUser);
