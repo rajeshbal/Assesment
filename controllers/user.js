@@ -159,7 +159,7 @@ const updateUser = async (req, res, next) => {
       });
     }
 
-    user = await User.findByIdAndUpdate(userId, req.body, {
+    updatedUser = await User.findByIdAndUpdate(userId, req.body, {
       new: false,
       useFindAndModify: false,
       runValidators: true,
